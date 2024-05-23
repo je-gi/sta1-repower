@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Walls
   - Water
   - UI
-  - 
+  - Doors
   - 
   - 
   - 
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Walls
+    uniqueID: 3173840203
+    locked: 0
+  - name: Doors
+    uniqueID: 4037307383
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 141288591
+    locked: 0
+  - name: Foreground
+    uniqueID: 3496180505
     locked: 0

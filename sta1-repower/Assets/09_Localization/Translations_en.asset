@@ -218,6 +218,24 @@ MonoBehaviour:
     m_Localized: Click on the house to learn more.
     m_Metadata:
       m_Items: []
+  - m_Id: 1130855527378944
+    m_Localized: "The generation of solar power is environmentally friendly. There
+      are no harmful CO2 emissions, smoke or particulate matter. This protects the
+      environment and the health of humans and animals.\r\n\r\nPhotovoltaic systems
+      have a service life of over 30 years. An operating time of one to three years
+      is enough to compensate for the gray energy used in the production of the solar
+      modules. \r\nGrey energy is the energy used until a product is positioned and
+      functional at its final location. Grey energy includes, for example, the production
+      of solar modules, transportation and assembly or the energy required for sales.
+      \r\n\r\nThe majority of a solar panel is made of glass. A total of 80 to 90
+      percent of a solar panel can be recycled. \r\n\r\nStudies show that ground-mounted
+      systems also have benefits for the surrounding nature. Land is required for
+      the construction of such systems, but if they are built carefully, they can
+      have a positive impact on the environment and biodiversity. One example of
+      this is photovoltaics, where agriculture is practiced underneath the ground-mounted
+      systems. \r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

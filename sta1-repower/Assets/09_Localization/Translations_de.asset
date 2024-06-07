@@ -222,6 +222,25 @@ MonoBehaviour:
     m_Localized: Klicke auf das Haus, um mehr zu lernen.
     m_Metadata:
       m_Items: []
+  - m_Id: 1130855527378944
+    m_Localized: "Die Erzeugung von Solarstrom ist umweltfreundlich. Es entstehen
+      keine sch\xE4dlichen CO2-Emissionen, Rauch oder Feinstaub. Das schont die Umwelt
+      und die Gesundheit von Mensch und Tier.\r\n\r\nPhotovoltaikanlagen haben eine
+      Lebensdauer von \xFCber 30 Jahren. Eine Betriebszeit von ein bis drei Jahren
+      reicht aus, um die graue Energie zu kompensieren, die bei der Herstellung der
+      Solarmodule verbraucht wird. \r\nGraue Energie ist die Energie, die verbraucht
+      wird, bis ein Produkt an seinem endg\xFCltigen Standort aufgestellt und funktionsf\xE4hig
+      ist. Graue Energie umfasst beispielsweise die Produktion von Solarmodulen,
+      den Transport und die Montage oder die f\xFCr den Verkauf ben\xF6tigte Energie.
+      \r\n\r\nDer gr\xF6sste Teil eines Solarmoduls besteht aus Glas. Insgesamt k\xF6nnen
+      80 bis 90 Prozent eines Solarmoduls recycelt werden. \r\n\r\nStudien zeigen,
+      dass Freifl\xE4chensysteme auch Vorteile f\xFCr die umliegende Natur haben.
+      F\xFCr den Bau solcher Anlagen wird zwar Land ben\xF6tigt, aber wenn sie sorgf\xE4ltig
+      gebaut werden, k\xF6nnen sie sich positiv auf die Umwelt und die Artenvielfalt
+      auswirken. Ein Beispiel daf\xFCr ist die Photovoltaik, bei der unter den Freifl\xE4chenanlagen
+      Landwirtschaft betrieben wird. "
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

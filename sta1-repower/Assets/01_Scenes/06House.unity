@@ -1990,6 +1990,7 @@ GameObject:
   - component: {fileID: 494125649}
   - component: {fileID: 494125651}
   - component: {fileID: 494125650}
+  - component: {fileID: 494125652}
   m_Layer: 5
   m_Name: VideoPanel02
   m_TagString: Untagged
@@ -2056,6 +2057,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494125648}
   m_CullTransparentMesh: 1
+--- !u!114 &494125652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494125648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9206187a8d9a47a3c9f425d7ff465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPanel: {fileID: 494125648}
+  videoPlayer: {fileID: 2117560124}
 --- !u!1 &497067737
 GameObject:
   m_ObjectHideFlags: 0
@@ -2470,6 +2485,7 @@ GameObject:
   - component: {fileID: 641338714}
   - component: {fileID: 641338716}
   - component: {fileID: 641338715}
+  - component: {fileID: 641338717}
   m_Layer: 5
   m_Name: VideoPanel04
   m_TagString: Untagged
@@ -2536,6 +2552,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 641338713}
   m_CullTransparentMesh: 1
+--- !u!114 &641338717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641338713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9206187a8d9a47a3c9f425d7ff465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPanel: {fileID: 641338713}
+  videoPlayer: {fileID: 1771789075}
 --- !u!1 &641727847
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,7 +2593,7 @@ RectTransform:
   m_GameObject: {fileID: 641727847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3975, y: 0.7, z: 1}
+  m_LocalScale: {x: 2.9369376, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1052655796}
@@ -2571,7 +2601,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -1.0000687, y: 378}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 100.48, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &641727849
 MonoBehaviour:
@@ -5386,8 +5416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: 377}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -1, y: 379}
+  m_SizeDelta: {x: 206.7, y: 56.006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1157306834
 MonoBehaviour:
@@ -5552,7 +5582,7 @@ MonoBehaviour:
           value: -4.9674377
         - localeIdentifier:
             m_Code: de
-          value: -20.830109
+          value: -87.41484
 --- !u!1 &1184288154
 GameObject:
   m_ObjectHideFlags: 0
@@ -7036,6 +7066,7 @@ GameObject:
   - component: {fileID: 1406236759}
   - component: {fileID: 1406236761}
   - component: {fileID: 1406236760}
+  - component: {fileID: 1406236762}
   m_Layer: 5
   m_Name: TextDisplay
   m_TagString: Untagged
@@ -7174,6 +7205,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406236758}
   m_CullTransparentMesh: 1
+--- !u!114 &1406236762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406236758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 3542539769547063350
+  references:
+    version: 2
+    RefIds:
+    - rid: 3542539769547063350
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
+        asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 1406236760}
+        m_TrackedProperties:
+          items:
+          - rid: 3542539769547063351
+        m_UpdateType: 0
+    - rid: 3542539769547063351
+      type: {class: LocalizedStringProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
+        asm: Unity.Localization}
+      data:
+        m_Localized:
+          m_TableReference:
+            m_TableCollectionName: GUID:5ed89ac3cf6c3d94e92a72f072939477
+          m_TableEntryReference:
+            m_KeyId: 1130855527378944
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+        m_PropertyPath: m_text
 --- !u!1 &1426188911
 GameObject:
   m_ObjectHideFlags: 0
@@ -9413,6 +9484,7 @@ GameObject:
   - component: {fileID: 1972427977}
   - component: {fileID: 1972427979}
   - component: {fileID: 1972427978}
+  - component: {fileID: 1972427980}
   m_Layer: 0
   m_Name: VideoPanel01
   m_TagString: Untagged
@@ -9479,6 +9551,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972427976}
   m_CullTransparentMesh: 1
+--- !u!114 &1972427980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972427976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ec9206187a8d9a47a3c9f425d7ff465, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoPanel: {fileID: 1972427976}
+  videoPlayer: {fileID: 295673367}
 --- !u!1 &1993994504
 GameObject:
   m_ObjectHideFlags: 0

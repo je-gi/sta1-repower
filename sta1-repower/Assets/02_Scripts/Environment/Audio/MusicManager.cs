@@ -5,6 +5,8 @@ public class MusicManager : MonoBehaviour
 {
     private static MusicManager instance = null;
     public AudioSource audioSource;
+    private float defaultVolume = 1.0f;
+    private float reducedVolume = 0.1f;
 
     public static MusicManager Instance
     {
@@ -25,6 +27,7 @@ public class MusicManager : MonoBehaviour
         }
 
         audioSource = GetComponent<AudioSource>();
+        defaultVolume = audioSource.volume;
     }
 
     void OnDestroy()
@@ -34,13 +37,11 @@ public class MusicManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.buildIndex == 6)
-        {
-            audioSource.volume = 0.1f; 
-        }
-        else
-        {
-            audioSource.volume = 1.0f; 
-        }
+        audioSource.volume = defaultVolume; 
+    }
+
+    public void SetVolumeForVideoPanel(bool isVideoPanelOpen)
+    {
+        audioSource.volume = isVideoPanelOpen ? reducedVolume : defaultVolume;
     }
 }

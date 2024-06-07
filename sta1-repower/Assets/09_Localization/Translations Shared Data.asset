@@ -191,6 +191,10 @@ MonoBehaviour:
     m_Key: Overview/+++++Task+++++/Panel/Text (TMP)
     m_Metadata:
       m_Items: []
+  - m_Id: 1130855527378944
+    m_Key: 06House/+++++UI+++++/TextPanel03/TextDisplay
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

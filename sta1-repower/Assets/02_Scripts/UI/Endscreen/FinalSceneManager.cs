@@ -32,7 +32,7 @@ public class FinalSceneManager : MonoBehaviour
         text2.text = "";
         text3.text = "";
 
-        SetAlpha(batterySprite, 1);  // Set battery sprite alpha to 1 initially
+        SetAlpha(batterySprite, 1); 
         foreach (Transform child in spriteContainer.transform)
         {
             SetAlpha(child.GetComponent<SpriteRenderer>(), 0);
@@ -147,7 +147,7 @@ public class FinalSceneManager : MonoBehaviour
         yield return StartCoroutine(FadeOutText(text3));
         yield return StartCoroutine(FadeOutUIElements());
 
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene(0);
     }
 
     IEnumerator FadeOutUIElements()

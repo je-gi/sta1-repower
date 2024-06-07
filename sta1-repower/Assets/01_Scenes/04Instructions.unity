@@ -540,7 +540,6 @@ GameObject:
   m_Component:
   - component: {fileID: 513405619}
   - component: {fileID: 513405618}
-  - component: {fileID: 513405620}
   m_Layer: 0
   m_Name: SceneFlowManager
   m_TagString: Untagged
@@ -567,9 +566,14 @@ MonoBehaviour:
   image02: {fileID: 2103790935}
   continueButton: {fileID: 1386386749}
   fadeInImage: {fileID: 1604972382}
-  typewriterSpeed: 0.05
   fadeDuration: 1
+  text02DelayAfterText01: 2
   text03DelayAfterImage02: 3
+  hoverAudioSource: {fileID: 166620831}
+  submitAudioSource: {fileID: 1936515653}
+  hoverColor: {r: 0.7254902, g: 0.8666667, b: 0.8666667, a: 1}
+  selectedColor: {r: 0.7254902, g: 0.8666667, b: 0.8666667, a: 1}
+  hoverScale: 1.1
 --- !u!4 &513405619
 Transform:
   m_ObjectHideFlags: 0
@@ -585,88 +589,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &513405620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513405617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 3542539707062943907
-  references:
-    version: 2
-    RefIds:
-    - rid: 3542539707062943907
-      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects,
-        asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 513405618}
-        m_TrackedProperties:
-          items:
-          - rid: 3542539707062943908
-          - rid: 3542539707062943909
-          - rid: 3542539707062943910
-          - rid: 3542539707062943911
-        m_UpdateType: 0
-        m_Changed:
-          m_PersistentCalls:
-            m_Calls: []
-    - rid: 3542539707062943908
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: text2Delay
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: 1
-        - localeIdentifier:
-            m_Code: de
-          value: 10
-    - rid: 3542539707062943909
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: text3Delay
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: 2
-        - localeIdentifier:
-            m_Code: de
-          value: 20
-    - rid: 3542539707062943910
-      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: buttonDisplayDelay
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: 2
-        - localeIdentifier:
-            m_Code: de
-          value: 35
-    - rid: 3542539707062943911
-      type: {class: UnityObjectProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties,
-        asm: Unity.Localization}
-      data:
-        m_PropertyPath: image1
-        m_TypeString: UnityEngine.UI.Image, UnityEngine.UI, Version=1.0.0.0, Culture=neutral,
-          PublicKeyToken=null
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: {fileID: 0}
-        - localeIdentifier:
-            m_Code: de
-          value: {fileID: 0}
 --- !u!1 &754241710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1579,7 +1501,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386386747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e431531dbbd15cf4ebc6a777b4d8e6ef, type: 3}
   m_Name: 
@@ -2150,8 +2072,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279961358
-  m_fontColor: {r: 0.054901965, g: 0.027450982, b: 0.10588236, a: 1}
+    rgba: 1771278
+  m_fontColor: {r: 0.054901965, g: 0.027450982, b: 0.10588236, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

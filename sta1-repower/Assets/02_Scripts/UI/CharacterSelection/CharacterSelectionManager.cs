@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -9,17 +10,26 @@ public class CharacterSelectionManager : MonoBehaviour
 {
     public List<Image> characterImages;
     public List<GameObject> largePortraitObjects;
-    public Button nextSceneButton; 
+    public Button nextSceneButton;
+    public AudioSource hoverAudioSource;
+    public AudioSource submitAudioSource;
+    public Color hoverColor = Color.yellow;
+    public Color selectedColor = Color.green;
+    public float hoverScale = 1.05f;
+    public TMP_Text nextSceneButtonText;
+
     private int currentIndex = -1;
     private Vector3[] originalScales;
     private Vector3 buttonOriginalScale;
     private bool isKeyboardControl = false;
     private int selectedIndex = -1;
+    private Color originalButtonTextColor;
 
     void Start()
     {
         originalScales = new Vector3[characterImages.Count];
         buttonOriginalScale = nextSceneButton.transform.localScale;
+        originalButtonTextColor = nextSceneButtonText.color;
 
         for (int i = 0; i < characterImages.Count; i++)
         {
@@ -29,7 +39,7 @@ public class CharacterSelectionManager : MonoBehaviour
             Animator animator = characterImages[i].GetComponent<Animator>();
             if (animator != null)
             {
-                animator.SetBool("IsSelected", false); 
+                animator.SetBool("IsSelected", false);
             }
 
             EventTrigger trigger = characterImages[i].gameObject.AddComponent<EventTrigger>();
@@ -59,8 +69,8 @@ public class CharacterSelectionManager : MonoBehaviour
 
         nextSceneButton.onClick.AddListener(OnNextSceneButtonClick);
 
-        SelectCharacter(0); 
-        HighlightCharacter(0); 
+        SelectCharacter(0);
+        HighlightCharacter(0);
         SelectCurrentCharacter();
     }
 
@@ -114,6 +124,10 @@ public class CharacterSelectionManager : MonoBehaviour
         if (!isKeyboardControl)
         {
             HighlightCharacter(index);
+            if (hoverAudioSource != null)
+            {
+                hoverAudioSource.Play();
+            }
         }
     }
 
@@ -130,21 +144,31 @@ public class CharacterSelectionManager : MonoBehaviour
         isKeyboardControl = false;
         SelectCharacter(index);
         SelectCurrentCharacter();
+        if (submitAudioSource != null)
+        {
+            submitAudioSource.Play();
+        }
     }
 
     public void OnButtonHoverEnter()
     {
-        nextSceneButton.transform.localScale = buttonOriginalScale * 1.05f;
+        nextSceneButton.transform.localScale = buttonOriginalScale * hoverScale;
+        nextSceneButtonText.color = hoverColor;
+        if (hoverAudioSource != null)
+        {
+            hoverAudioSource.Play();
+        }
     }
 
     public void OnButtonHoverExit()
     {
         nextSceneButton.transform.localScale = buttonOriginalScale;
+        nextSceneButtonText.color = originalButtonTextColor;
     }
 
     public void HighlightCharacter(int index)
     {
-        characterImages[index].rectTransform.localScale = originalScales[index] * 1.05f;
+        characterImages[index].rectTransform.localScale = originalScales[index] * hoverScale;
         if (index == selectedIndex)
         {
             Animator animator = characterImages[index].GetComponent<Animator>();
@@ -260,19 +284,19 @@ public class CharacterSelectionManager : MonoBehaviour
 
         int newIndex = newCol * rows + newRow;
 
-        if (currentIndex == 5 && colChange == 1) 
+        if (currentIndex == 5 && colChange == 1)
         {
             ResetCharacter(currentIndex);
             currentIndex = 6;
             HighlightButton();
         }
-        else if (currentIndex == 6 && colChange == -1) 
+        else if (currentIndex == 6 && colChange == -1)
         {
             OnButtonHoverExit();
             currentIndex = 5;
             HighlightCharacter(currentIndex);
         }
-        else if (currentIndex == 6 && colChange == 1) 
+        else if (currentIndex == 6 && colChange == 1)
         {
             OnButtonHoverExit();
             currentIndex = 5;
@@ -292,17 +316,23 @@ public class CharacterSelectionManager : MonoBehaviour
 
     private IEnumerator PlayAnimationAndLoadScene()
     {
+        if (submitAudioSource != null)
+        {
+            submitAudioSource.Play();
+        }
+
         Animator largePortraitAnimator = largePortraitObjects[selectedIndex].GetComponent<Animator>();
         if (largePortraitAnimator != null)
         {
             largePortraitAnimator.SetBool("IsSelected", true);
             yield return new WaitForSeconds(1.7f);
         }
-        SceneManager.LoadScene("Persona");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void HighlightButton()
     {
-        nextSceneButton.transform.localScale = buttonOriginalScale * 1.05f;
+        nextSceneButton.transform.localScale = buttonOriginalScale * hoverScale;
+        nextSceneButtonText.color = hoverColor;
     }
 }

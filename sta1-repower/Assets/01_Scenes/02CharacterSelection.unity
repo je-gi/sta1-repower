@@ -1432,7 +1432,7 @@ MonoBehaviour:
   hoverAudioSource: {fileID: 2003224303}
   submitAudioSource: {fileID: 363617259}
   hoverColor: {r: 0.7254902, g: 0.8666667, b: 0.8666667, a: 1}
-  selectedColor: {r: 0.5294118, g: 0.7529412, b: 0.7529412, a: 1}
+  selectedColor: {r: 0.7254902, g: 0.8666667, b: 0.8666667, a: 1}
   hoverScale: 1.1
   nextSceneButtonText: {fileID: 1432300547}
 --- !u!1 &634839175

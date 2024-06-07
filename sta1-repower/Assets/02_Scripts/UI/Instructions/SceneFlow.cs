@@ -1,62 +1,58 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+using TMPro;
 using System.Collections;
 
-public class SequentialTextAndImageManager : MonoBehaviour
+public class SceneFlowManager : MonoBehaviour
 {
-    public TMP_Text text1;
-    public TMP_Text text2;
-    public TMP_Text text3;
-    public Image image1;
-    public Image image2;
+    public TMP_Text text01;
+    public TMP_Text text02;
+    public TMP_Text text03;
+    public Image image01;
+    public Image image02;
     public Button continueButton;
-
+    public Image fadeInImage;
     public float typewriterSpeed = 0.05f;
     public float fadeDuration = 1f;
-    public float text2Delay = 1f;
-    public float image1DisplayDelay = 0.5f;
-    public float image2DisplayDelay = 0.5f;
-    public float text3Delay = 1f;
-    public float buttonDisplayDelay = 2f;
+    public float text03DelayAfterImage02 = 3f;
 
-    private string text1Content;
-    private string text2Content;
-    private string text3Content;
-
-    private bool isText3Complete = false;
+    private string text01Content;
 
     void Start()
     {
-        text1Content = text1.text;
-        text2Content = text2.text;
-        text3Content = text3.text;
-
-        text1.text = "";
-        text2.text = "";
-        text3.text = "";
-
-        SetAlpha(image1, 0);
-        SetAlpha(image2, 0);
+        text01Content = text01.text;
+        text01.text = "";
+        text02.gameObject.SetActive(false);
+        text03.gameObject.SetActive(false);
+        image01.gameObject.SetActive(false);
+        image02.gameObject.SetActive(false);
         continueButton.gameObject.SetActive(false);
+        fadeInImage.gameObject.SetActive(false);
 
         StartCoroutine(SceneSequence());
     }
 
     IEnumerator SceneSequence()
     {
-        yield return StartCoroutine(DisplayTextWithTypewriter(text1, text1Content));
-        yield return StartCoroutine(FadeOutText(text1));
-        yield return new WaitForSeconds(text2Delay);
-        yield return StartCoroutine(DisplayTextWithTypewriter(text2, text2Content));
-        yield return new WaitForSeconds(image1DisplayDelay);
-        yield return StartCoroutine(FadeInImage(image1));
-        yield return new WaitForSeconds(image2DisplayDelay);
-        yield return StartCoroutine(FadeInImage(image2));
-        yield return new WaitForSeconds(text3Delay);
-        yield return StartCoroutine(DisplayTextWithTypewriter(text3, text3Content));
-        StartCoroutine(ShowContinueButton());
+        yield return StartCoroutine(FadeOutImage(fadeInImage));
+        fadeInImage.gameObject.SetActive(false);
+
+        yield return StartCoroutine(DisplayTextWithTypewriter(text01, text01Content));
+        yield return StartCoroutine(FadeOutText(text01));
+
+        yield return new WaitForSeconds(2f);
+        text02.gameObject.SetActive(true);
+        yield return StartCoroutine(FadeInText(text02));
+
+        yield return StartCoroutine(FadeInImage(image01));
+        yield return new WaitForSeconds(1f);
+        yield return StartCoroutine(FadeInImage(image02));
+
+        yield return new WaitForSeconds(text03DelayAfterImage02);
+        text03.gameObject.SetActive(true);
+        yield return StartCoroutine(FadeInText(text03));
+
+        continueButton.gameObject.SetActive(true);
     }
 
     IEnumerator DisplayTextWithTypewriter(TMP_Text textComponent, string textContent)
@@ -66,79 +62,74 @@ public class SequentialTextAndImageManager : MonoBehaviour
             textComponent.text += c;
             yield return new WaitForSeconds(typewriterSpeed);
         }
-        isText3Complete = true; // Markiere den Text als komplett angezeigt
     }
 
     IEnumerator FadeOutText(TMP_Text textComponent)
     {
         float elapsedTime = 0;
+        Color originalColor = textComponent.color;
+
         while (elapsedTime < fadeDuration)
         {
             elapsedTime += Time.deltaTime;
             float alpha = Mathf.Clamp01(1 - (elapsedTime / fadeDuration));
-            textComponent.alpha = alpha;
+            textComponent.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
             yield return null;
         }
-        textComponent.alpha = 0;
+
+        textComponent.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0);
+        textComponent.gameObject.SetActive(false);
     }
 
-    IEnumerator FadeInImage(Image image)
+    IEnumerator FadeInText(TMP_Text textComponent)
     {
         float elapsedTime = 0;
+        Color originalColor = textComponent.color;
+        textComponent.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0);
+        textComponent.gameObject.SetActive(true);
+
         while (elapsedTime < fadeDuration)
         {
             elapsedTime += Time.deltaTime;
             float alpha = Mathf.Clamp01(elapsedTime / fadeDuration);
-            SetAlpha(image, alpha);
+            textComponent.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
             yield return null;
         }
-        SetAlpha(image, 1);
+
+        textComponent.color = new Color(originalColor.r, originalColor.g, originalColor.b, 1);
     }
 
-    IEnumerator ShowContinueButton()
+    IEnumerator FadeInImage(Image image)
     {
-        yield return new WaitForSeconds(buttonDisplayDelay);
-        continueButton.gameObject.SetActive(true);
-        continueButton.onClick.AddListener(OnContinueButtonClicked);
-    }
+        image.gameObject.SetActive(true);
+        float elapsedTime = 0;
+        Color originalColor = image.color;
+        image.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0);
 
-    void OnContinueButtonClicked()
-    {
-        StartCoroutine(FadeOutAndLoadScene());
-    }
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Clamp01(elapsedTime / fadeDuration);
+            image.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            yield return null;
+        }
 
-    IEnumerator FadeOutAndLoadScene()
-    {
-        yield return StartCoroutine(FadeOutText(text1));
-        yield return StartCoroutine(FadeOutText(text2));
-        yield return StartCoroutine(FadeOutText(text3));
-        yield return StartCoroutine(FadeOutImage(image1));
-        yield return StartCoroutine(FadeOutImage(image2));
-        continueButton.gameObject.SetActive(false);
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        image.color = new Color(originalColor.r, originalColor.g, originalColor.b, 1);
     }
 
     IEnumerator FadeOutImage(Image image)
     {
         float elapsedTime = 0;
+        Color originalColor = image.color;
+
         while (elapsedTime < fadeDuration)
         {
             elapsedTime += Time.deltaTime;
             float alpha = Mathf.Clamp01(1 - (elapsedTime / fadeDuration));
-            SetAlpha(image, alpha);
+            image.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
             yield return null;
         }
-        SetAlpha(image, 0);
-    }
 
-    void SetAlpha(Image image, float alpha)
-    {
-        if (image != null)
-        {
-            Color color = image.color;
-            color.a = alpha;
-            image.color = color;
-        }
+        image.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0);
     }
 }

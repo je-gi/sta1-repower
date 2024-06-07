@@ -19,12 +19,15 @@ EditorBuildSettings:
     guid: b019b55abc8e8f84ab46c5e8c7094206
   - enabled: 1
     path: Assets/01_Scenes/04Instructions.unity
+    guid: be9c4b2b12cc88a4590c8db14bb2a3da
+  - enabled: 0
+    path: Assets/01_Scenes/04Instructions.unity
     guid: d2217788e18f66a48a9bbb6259a1ef24
   - enabled: 1
-    path: Assets/01_Scenes/Overview.unity
+    path: Assets/01_Scenes/05Overview.unity
     guid: 26cd9f58540022749aa7b7f052cdbeb2
   - enabled: 1
-    path: Assets/01_Scenes/House.unity
+    path: Assets/01_Scenes/06House.unity
     guid: f0474269f2810874bbcca6ecdd4ca90b
   - enabled: 1
     path: Assets/01_Scenes/07Endscreen.unity

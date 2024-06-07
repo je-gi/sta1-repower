@@ -175,6 +175,22 @@ MonoBehaviour:
     m_Key: 07Endscreen/Canva/+++++Text+++++/Text001
     m_Metadata:
       m_Items: []
+  - m_Id: 1066894945710080
+    m_Key: InstructionsNew/Text01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1067903763902464
+    m_Key: InstructionsNew/Text02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1068957905743872
+    m_Key: InstructionsNew/Text03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1084925545574400
+    m_Key: Overview/+++++Task+++++/Panel/Text (TMP)
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

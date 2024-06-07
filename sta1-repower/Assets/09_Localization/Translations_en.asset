@@ -144,7 +144,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19293383192576
-    m_Localized: What do you think will happen once the battery is fully charged?
+    m_Localized: Are you ready to charge your battery?
     m_Metadata:
       m_Items: []
   - m_Id: 19464263331840
@@ -190,6 +190,32 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 304540733698048
     m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1066894945710080
+    m_Localized: 'In an age where technology advances faster than ever, the power
+      of knowledge becomes our greatest resource.
+
+
+
+      You will enter a world
+      full of discoveries. Interact with various objects to decide what interests
+      you. Tailored to your curiosity, you will learn what electrification means.  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1067903763902464
+    m_Localized: 'As you explore and discover, you''ll gather knowledge that converts
+      into energy, filling up a battery.
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1068957905743872
+    m_Localized: Are you ready to charge yourself?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1084925545574400
+    m_Localized: Click on the house to learn more.
     m_Metadata:
       m_Items: []
   references:

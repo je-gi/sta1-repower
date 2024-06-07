@@ -143,8 +143,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 19293383192576
-    m_Localized: "Was glaubst du, was passiert, wenn die Batterie vollst\xE4ndig
-      geladen ist?"
+    m_Localized: Bist du bereit, deine Batterie zu laden?
     m_Metadata:
       m_Items: []
   - m_Id: 19464263331840
@@ -200,6 +199,27 @@ MonoBehaviour:
   - m_Id: 304540733698048
     m_Localized: Oh no, it's dark. You've gathered so much energy that it caused
       a short circuit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1066894945710080
+    m_Localized: "In einer Zeit, in der die Technologie schneller als je zuvor voranschreitet,
+      wird die Macht des Wissens zu unserer gr\xF6ssten Ressource.\r\n\r\nDu wirst
+      eine Welt voller Entdeckungen betreten. Interagiere mit verschiedenen Objekten
+      und entscheide, was dich interessiert. Abgestimmt auf deine Neugier wirst du
+      lernen, was Elektrifizierung bedeutet.  "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1067903763902464
+    m_Localized: "W\xE4hrend du erforschst und entdeckst, sammelst du Wissen, das
+      in Energie umgewandelt wird und eine Batterie auff\xFCllt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1068957905743872
+    m_Localized: Bist du bereit, dich aufzuladen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1084925545574400
+    m_Localized: Klicke auf das Haus, um mehr zu lernen.
     m_Metadata:
       m_Items: []
   references:

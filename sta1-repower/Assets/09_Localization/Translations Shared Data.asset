@@ -1,0 +1,189 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Translations Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Translations
+  m_TableCollectionNameGuidString: 5ed89ac3cf6c3d94e92a72f072939477
+  m_Entries:
+  - m_Id: 716265517056
+    m_Key: GermanLanguage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 760389595136
+    m_Key: EnglishLanguage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6214545076224
+    m_Key: 01IntroductionQuoteText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7289675214848
+    m_Key: 00MainMenuStartText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8171892535296
+    m_Key: 01IntroductionMaintext
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8436582477824
+    m_Key: 01IntroductionContinueButton
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10718401294336
+    m_Key: 02CharacterSelectionTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11116306526208
+    m_Key: 02CharacterSelectionContinue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11456288419840
+    m_Key: 03PersonaTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11582704742400
+    m_Key: 03PersonaAge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11706776449024
+    m_Key: 03PersonaAgeText
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11924381134848
+    m_Key: 03PersonaEducation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12123916759040
+    m_Key: 03PersonaEducationPrimary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12214966710272
+    m_Key: 03PersonaEducationSecondary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12295228911616
+    m_Key: 03PersonaEducationApprenticeship
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12702013485056
+    m_Key: 03PersonaEducationMatura
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12755524415488
+    m_Key: 03PersonaEducationUniversity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917852368896
+    m_Key: 03PersonaSelfAssesment
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13239068946432
+    m_Key: 03PersonaHearing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15399554936832
+    m_Key: 03PersonaCanHear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15518585090048
+    m_Key: 03PersonaCannotHear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15740744790016
+    m_Key: 03PersonaDaytime
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16676556926976
+    m_Key: 03PersonaMorning
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16776981147648
+    m_Key: 03PersonaDay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16851329380352
+    m_Key: 03PersonaEvening
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17314997104640
+    m_Key: 03PersonaContinue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17926069448704
+    m_Key: 04InstructionsText01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18152314400768
+    m_Key: 04InstructionsText02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19293383192576
+    m_Key: 04InstructionsText03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19464263331840
+    m_Key: 04InstructionsContinue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20963055923200
+    m_Key: 07EndscreenText01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21089853927424
+    m_Key: 07EndscreenText02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21227968163840
+    m_Key: 07EndscreenText03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 273208251019264
+    m_Key: HouseText01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 273596727455744
+    m_Key: HouseText02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 273832778690560
+    m_Key: HousText03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 274043357917184
+    m_Key: HouseText04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282841778778112
+    m_Key: 01Introduction/TextEffectManager
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282860007223296
+    m_Key: 01Introduction/TextEffectManager 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304540733698048
+    m_Key: 07Endscreen/Canva/+++++Text+++++/Text001
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 3542539707062943768
+  references:
+    version: 2
+    RefIds:
+    - rid: 3542539707062943768
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1717509766270

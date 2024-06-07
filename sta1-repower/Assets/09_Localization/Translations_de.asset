@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Translations_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 5ed89ac3cf6c3d94e92a72f072939477, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 716265517056
+    m_Localized: Deutsch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 760389595136
+    m_Localized: ' Englisch'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6214545076224
+    m_Localized: "Die Elektrifizierung ist das Herzst\xFCck unserer vernetzten Welt
+      und treibt alles an, von den Ger\xE4ten in unseren H\xE4usern bis hin zur Infrastruktur,
+      die uns bewegt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7289675214848
+    m_Localized: "beliebige Taste dr\xFCcken"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8171892535296
+    m_Localized: "Indem wir ein tiefes Verst\xE4ndnis dieser Systeme erlangen, k\xF6nnen
+      wir Wissen verbreiten und die Innovation f\xF6rdern. \r\n\r\nDieses Spiel soll
+      dir das Wissen und die F\xE4higkeiten vermitteln, die du brauchst, um zu einer
+      st\xE4rker elektrifizierten und informierten Zukunft beizutragen. \r\n\r\nWer
+      bist du, der mehr lernen m\xF6chte?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8436582477824
+    m_Localized: weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10718401294336
+    m_Localized: "w\xE4hle deinen Charakter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11116306526208
+    m_Localized: weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11456288419840
+    m_Localized: Was macht dich aus?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11582704742400
+    m_Localized: Wie alt bist du?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11706776449024
+    m_Localized: 'Alter: 0 '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11924381134848
+    m_Localized: 'Was ist dein Bildungshintergrund? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12123916759040
+    m_Localized: Primarschule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12214966710272
+    m_Localized: Sekundarschule
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12295228911616
+    m_Localized: Berufslehre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12702013485056
+    m_Localized: 'Matura '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12755524415488
+    m_Localized: "universit\xE4rer Abschluss"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12917852368896
+    m_Localized: 'Wie gut kennst du dich im Bereich der Elektrifizierung aus? '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13239068946432
+    m_Localized: "Wie nimmst du Informationen am liebsten auf: durch Zuh\xF6ren oder
+      Lesen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15399554936832
+    m_Localized: "Zuh\xF6ren"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15518585090048
+    m_Localized: Lesen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 15740744790016
+    m_Localized: Zu welcher Tageszeit spielst du gerade?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16676556926976
+    m_Localized: Morgen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16776981147648
+    m_Localized: Tag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16851329380352
+    m_Localized: Abend
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17314997104640
+    m_Localized: weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17926069448704
+    m_Localized: "In einer Zeit, in der die Technologie schneller als je zuvor voranschreitet,
+      wird die Macht des Wissens zu unserer gr\xF6ssten Ressource.\r\n\r\nDu wirst
+      eine Welt voller Entdeckungen betreten. Interagiere mit verschiedenen Objekten
+      und entscheide, was dich interessiert. Abgestimmt auf deine Neugier wirst du
+      lernen, was Elektrifizierung bedeutet. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18152314400768
+    m_Localized: "W\xE4hrend du erforschst und entdeckst, sammelst du Wissen, das
+      in Energie umgewandelt wird und eine Batterie auff\xFCllt. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19293383192576
+    m_Localized: "Was glaubst du, was passiert, wenn die Batterie vollst\xE4ndig
+      geladen ist?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19464263331840
+    m_Localized: weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20963055923200
+    m_Localized: Oh nein, es ist dunkel. Du hast so viel Energie angesammelt, dass
+      es zu einem Kurzschluss gekommen ist.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21089853927424
+    m_Localized: 'Benutze die gesammelte Energie, um den Bildschirm wieder zum Leuchten
+      zu bringen.  '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21227968163840
+    m_Localized: "Dr\xFCcke die Taste \u201EF\u201C oder klicke wiederholt mit der
+      Maus, um das Licht wiederherzustellen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 273208251019264
+    m_Localized: Wie funktionieren Solaranlagen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 273596727455744
+    m_Localized: "Wie viel Strom ben\xF6tigt die Mobilit\xE4t in der Schweiz?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 273832778690560
+    m_Localized: Was sind die Vorteile von Solarenergie?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 274043357917184
+    m_Localized: Was passiert, wenn die Sonne nicht scheint?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282841778778112
+    m_Localized: By gaining a deep understanding of these systems, we can spread
+      knowledge and foster innovation.   This game is dedicated to equipping you
+      with the knowledge and skills necessary to contribute to a more electrified
+      and informed future.   Who are you, eager to learn more?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282860007223296
+    m_Localized: "Indem wir ein tiefes Verst\xE4ndnis dieser Systeme erlangen, k\xF6nnen
+      wir Wissen verbreiten und die Innovation f\xF6rdern.   Dieses Spiel soll dir
+      das Wissen und die F\xE4higkeiten vermitteln, die du brauchst, um zu einer
+      st\xE4rker elektrifizierten und informierten Zukunft beizutragen.   Wer bist
+      du, der mehr lernen m\xF6chte?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 304540733698048
+    m_Localized: Oh no, it's dark. You've gathered so much energy that it caused
+      a short circuit.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

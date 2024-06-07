@@ -3,14 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Interactable
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Walls
+  - Player
   - Water
   - UI
+  - 
+  - Walls
   - Doors
   - 
   - 
@@ -35,17 +38,21 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
   m_SortingLayers:
-  - name: Walls
-    uniqueID: 3173840203
-    locked: 0
   - name: Doors
     uniqueID: 4037307383
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI Elements
+    uniqueID: 1944283315
+    locked: 0
+  - name: Player
+    uniqueID: 3927129333
+    locked: 0
+  - name: Walls
+    uniqueID: 3173840203
     locked: 0
   - name: Background
     uniqueID: 141288591
